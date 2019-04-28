@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#ff4b1f,#1fddff);
+    margin: 0;
+}
+
+#container{
+    margin: 50px auto;
+    width: 400px; 
+    background-color: white;  
+    box-shadow: 3px 3px 10px gray;
+}
+
+.listStyle {
+    color:gray;
+}
+.listStyle::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.4rem;
+    content: "\f058";
+    color:green;
+    float: right;
+    padding: 0 10px;
+  }
+
+
+li {
+    height:40px;
+    line-height: 40px;
+    background: white;
+    list-style: none;
+    font-weight: 700;
+    
+}
+
+li:nth-child(2n){
+    background-color: #dddddd;
+}
+
+h1 {
+    text-transform: uppercase;
+    background-image: url("img/hero.jpg");
+    color:white;
+    font-size: 40px;
+    height: 60px;
+    background-size: cover;
+    vertical-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+}
+
+span {
+    display: inline-block;
+    background-color:red;
+    color:white;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    width:0;
+    opacity:0;
+    transition: 0.3s linear;
+}
+
+li:hover span {
+    width:40px;
+    opacity:1;
+
+}
+
+
